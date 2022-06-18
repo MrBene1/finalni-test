@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 10px;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -90%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30%;
+  align-items: center;
+}
+.header img {
+  width: 190px;
+  height: 70px;
+}
+.menu {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+.menu-link {
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 13px;
+}
+
+.home-menu {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.home-link {
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  padding: 11px 16px;
+}
