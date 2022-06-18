@@ -1,7 +1,7 @@
 import React from 'react';
 
 function About() {
-    return ( <div>O nama</div> );
+    return ( <div className='home-link'>O nama</div> );
 }
 
 export default About;

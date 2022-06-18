@@ -13,7 +13,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30%;
+  margin-bottom: 5%;
   align-items: center;
 }
 .header img {
@@ -37,8 +37,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 40px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-top: 30%;
 }
 .home-link {
   text-decoration: none;
@@ -46,4 +45,29 @@ body {
   border-radius: 5px;
   color: white;
   padding: 11px 16px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.label {
+  font-size: 1.2em;
+}
+.input{
+  margin: 3% 13%;
+  width: 70%;
+	height: 25px;
+	background: #e0dede;
+	display: flex;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.o-proizvodu {
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 5px;
+  color: white;
+  padding: 11px 16px;
+  margin: 3% 15%;
 }
