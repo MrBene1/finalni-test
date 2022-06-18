@@ -14,16 +14,20 @@ function App() {
   const idSet = (e) => {
     setId(e)
   }
+  const [pageLang,setPageLang]=useState("MNE");
+  const setLang = (e) => {
+    setPageLang(e)
+  }
   return (
     <div className="App">
       <BrowserRouter>
-        <Header></Header>
+        <Header setLang={setLang} lang={pageLang}></Header>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about-us" element={<About/>}/>
-          <Route path="/scan" element={<Scan postId={idSet}/>}/>
+          <Route path="/" element={<Home lang={pageLang}/>}/>
+          <Route path="/about-us" element={<About lang={pageLang}/>}/>
+          <Route path="/scan" element={<Scan postId={idSet} lang={pageLang}/>}/>
           <Route path="/user" element={<User/>}/>
-        <Route path={"/"+id} element={<Post postId={id}/>}/>
+        <Route path={"/"+id} element={<Post postId={id} lang={pageLang}/>}/>
         </Routes>
     </BrowserRouter>
     </div>

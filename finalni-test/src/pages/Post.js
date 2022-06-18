@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 
-function Post({postId}) {
+function Post({postId, lang}) {
     
     const [books,setBooks]=useState([]);
     const getData=()=>{
@@ -18,7 +18,7 @@ function Post({postId}) {
 
     return ( 
     <div className='App'>
-        <div className='home-link'>Detalji o proizvodu</div>
+        <div className='home-link'>{lang === "MNE"? "Detalji o proizvodu" : "Product details"}</div>
         {books.map(book => book.id == postId?(<div key={book.id}>
                 <div className='o-proizvodu'>{book.naziv}</div>
                 <div className='o-proizvodu'>{book.autor}</div>
